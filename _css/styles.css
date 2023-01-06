@@ -1,0 +1,308 @@
+/************************************************************
+http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*************************************************************/
+/*********************************************
+		ERIC MEYERS RESET
+*********************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/***********************************************
+        BORDER BOX FIX
+***********************************************/
+html {
+box-sizing: border-box;
+}
+*, *::before, *::after {
+box-sizing: inherit;
+}
+/***********************************************
+      UNIVERSAL STYLES
+***********************************************/
+body{
+  background-image: url('../_images/dust.png');
+  background-color: #535252;
+}
+.divContainer{
+  background-color: black;
+  background-image: url('../_images/1280px-JQuery-Logo.svg.png');
+  background-repeat: no-repeat;
+  background-position: 30px 20px;
+  background-size: 890px 180px;
+  width: 970px;
+  height: 700px;
+  margin: 10px auto;
+  border: 3px solid #228ef9;
+}
+/***********************************************
+      TRIVIA BOX
+***********************************************/
+.box{
+   width: 800px;
+   height: 300px;
+   border: 3px solid #228ef9;
+   position: relative;
+   top: 230px;
+   margin: 0px auto;
+   background-color: #2c2f3e;
+}
+h1{
+  color: #228ef9;
+  font-family: 'Trebuchet MS';
+  font-size: 4em;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0px 3px 10px black;
+}
+/***********************************************
+      TRIVIA BOX QUIZ MODE
+***********************************************/
+.time-p{
+  color: black;
+  font-family: 'Trebuchet MS';
+  font-size: 1.3em;
+  padding: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0px 0px 2px white;
+  display: none;
+}
+#timer{
+  color: #10fbe2;
+  text-shadow: 0px 0px 5px black;
+}
+.q-box{
+  height: 90px;
+  width: 650px;
+  margin-left: 70px;
+  font-family: 'Trebuchet MS';
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.question{;
+  font-family: 'Trebuchet MS';
+  font-size: 30px;
+  padding: 5px;
+  text-align: center;
+  text-shadow: 0px 0px 4px black;
+}
+/***********************************************
+      BUTTONS
+***********************************************/
+.btn{
+  height: 50px;
+  width: 650px;
+  background-color: black;
+  border-color: black;
+  margin: 9px 0px 9px 70px;
+  position: relative;
+  top: -10px;
+  font-size: 24px;
+  box-shadow: 2px 1px 3px grey;
+  color: #228ef9;
+  display: none;
+  border-radius: 15px;
+}
+.btn:hover{
+  transform: scale(1.05);
+}
+#btn_start{
+  height: 50px;
+  width: 650px;
+  background-color: black;
+  border-color: black;
+  margin: 9px 0px 9px 70px;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 2px 1px 3px grey;
+  color: #228ef9;
+  border-radius: 15px;
+}
+#btn_start:hover{
+  transform: scale(1.05);
+  color: white;
+}
+#play_again{
+  height: 50px;
+  width: 250px;
+  background-color: black;
+  border-color: black;
+  margin: 9px 0px 9px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 2px 1px 3px grey;
+  color: #228ef9;
+  border-radius: 15px;
+  position: relative;
+  top: 30px;
+  left: -20px;
+}
+#play_again:hover{
+  transform: scale(1.05);
+  color: white;
+}
+#missed_questions{
+  height: 50px;
+  width: 350px;
+  background-color: black;
+  border-color: black;
+  margin: 9px 0px 9px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 2px 1px 3px grey;
+  color: #228ef9;
+  border-radius: 15px;
+  position: relative;
+  top: 30px;
+  left: 30px;
+
+}
+#missed_questions:hover{
+  transform: scale(1.05);
+  color: white;
+}
+/***********************************************
+     MESSAGE DIV
+***********************************************/
+#message{
+  width: 794px;
+  height: 214px;
+  z-index: 10;
+  position: relative;
+  top: -60px;
+  margin-left: 85px;
+  border-radius: 15px;
+  background-color: #4ebdf0;
+  color: black;
+  text-shadow: 0px 0px 4px white;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 70px;
+  border: 5px solid black;
+  display: none;
+}
+#close{
+  background-color: #0b1212;
+  height: 40px;
+  width: 70px;
+  border-radius: 15px;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 150px;
+  left: 690px;
+  border: 2px solid grey;
+  box-shadow: 0px 2px 2px black;
+}
+#close:hover{
+  transform: scale(1.2);
+}
+/***********************************************
+      GAME OVER SCREEN
+***********************************************/
+.score{
+  color: #1ff124;
+  font-family: 'Trebuchet MS';
+  font-size: 22px;
+  padding: 5px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0px 0px 4px black;
+}
+.red{
+  color: #fb1026;
+}
+.yellow{
+  color: #fbcf10;
+}
+/***********************************************
+  MISSED QUESTIONS MODE
+***********************************************/
+#back{
+    position: relative;
+    left: 160px;
+    top: 6px;
+    color: #228ef9;
+    border: 2px solid #228ef9;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 4px 5px 3px black;
+    height: 45px;
+    width: 100px;
+    font-size: 24px;
+    padding: 6px;
+}
+#back:hover{
+    transform: scale(1.1);
+    color: white;
+}
+#next{
+    position: relative;
+    left: 420px;
+    top: 6px;
+    color: #228ef9;
+    border: 2px solid #228ef9;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 4px 5px 3px black;
+    height: 45px;
+    width: 100px;
+    font-size: 24px;
+    padding: 6px;
+}
+#next:hover{
+  transform: scale(1.1);
+  color: white;
+}
+.timeOutNote{
+  padding-top: 10px;
+  color: #fbcf0f;
+  font-size: 16px;
+}
+/***********************************************
+      end of styles
+***********************************************/
